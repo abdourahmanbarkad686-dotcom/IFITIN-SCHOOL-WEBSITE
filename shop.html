@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | IFITIN Private School</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">IFITIN Private School</h1>
+
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="shop.html" class="active">Shop</a></li>
+          <li><a href="enroll.html">Enroll</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- UPDATED: Profile Picture and Cart Icon together -->
+      <div class="header-right">
+        <div class="cart-icon">
+          🛒 <span id="cart-count">0</span>
+        </div>
+        
+        <div class="profile-pic">
+         <img src="images/profile.png" alt="Profile Picture">
+        </div>
+      </div>
+      
+      <div id="menu-btn">☰</div>
+    </div>
+  </header>
+
+  <section class="container shop">
+    <h2>Buy Learning Materials</h2>
+
+    <div class="shop-grid">
+      <div class="item" data-name="E-commerce Guidebook" data-price="25">
+        <img src="images/book1.jpg" alt="E-commerce Guidebook">
+        <h3>E-commerce Guidebook</h3>
+        <p>$25</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <div class="item" data-name="Digital Marketing Toolkit" data-price="30">
+        <img src="images/book2.jpg" alt="Digital Marketing Toolkit">
+        <h3>Digital Marketing Toolkit</h3>
+        <p>$30</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <div class="item" data-name="Web Design Starter Pack" data-price="20">
+        <img src="images/book3.jpg" alt="Web Design Starter Pack">
+        <h3>Web Design Starter Pack</h3>
+        <p>$20</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <div class="item" data-name="Entrepreneurship Manual" data-price="40">
+        <img src="images/book4.jpg" alt="Entrepreneurship Manual">
+        <h3>Entrepreneurship Manual</h3>
+        <p>$40</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <div class="item" data-name="Advanced Web Design" data-price="50">
+        <img src="images/book5.jpg" alt="Advanced Web Design">
+        <h3>Advanced Web Design</h3>
+        <p>$50</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <div class="item" data-name="Business Strategy Guide" data-price="70">
+        <img src="images/book6.jpg" alt="Business Strategy Guide">
+        <h3>Business Strategy Guide</h3>
+        <p>$70</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <div class="item" data-name="Marketing Masterclass" data-price="80">
+        <img src="images/book7.jpg" alt="Marketing Masterclass">
+        <h3>Marketing Masterclass</h3>
+        <p>$80</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container cart-section">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p id="cart-total">Total: $0</p>
+    <button id="checkout-btn" class="btn">Checkout</button>
+
+    <div id="checkout-form" class="hidden">
+      <h3>Checkout</h3>
+      <form id="checkoutForm">
+        <label>Full Name:</label>
+        <input type="text" id="fullName" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Payment Method:</label>
+        <select id="payment">
+          <option>Credit Card</option>
+          <option>PayPal</option>
+          <option>Mobile Payment</option>
+        </select>
+
+        <button type="submit" class="btn">Confirm Payment</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 IFITIN Private School</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enroll | IFITIN Private School</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">IFITIN Private School</h1>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="enroll.html" class="active">Enroll</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- ADDED: Profile Picture and Cart Icon -->
+      <div class="header-right">
+        <div class="cart-icon">
+          🛒 <span id="cart-count">0</span>
+        </div>
+        
+        <div class="profile-pic">
+         <img src="images/profile.png" alt="Profile Picture">
+        </div>
+      </div>
+      
+      <div id="menu-btn">☰</div>
+    </div>
+  </header>
+
+  <section class="container form-section">
+    <h2>Enroll Now</h2>
+    <form id="enrollForm">
+      <label>Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+
+      <label>Select Course:</label>
+      <select id="course">
+        <option>E-commerce Basics</option>
+        <option>Digital Marketing</option>
+        <option>Web Design</option>
+      </select>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <p id="enrollMessage"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 IFITIN Private School</p>
+  </footer>
+</body>
+</html>
